@@ -71,7 +71,7 @@ router.route('/register')
       gender
     })
 
-    storage.lastMessage = `Hi, ${username}. You have been registered! <a href="/login">Log in</a>`
+    storage.lastMessage = `Hi, ${_(username)}. You have been registered! <a href="/login">Log in</a>`
     
     res.redirect('/')
   })
