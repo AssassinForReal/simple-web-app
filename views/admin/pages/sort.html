@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Sort</h1>
+
+  <form action="sort" method="post" onchange="this.submit()">
+    <div class="form-radio">
+      <input id="input-ascending" name="sort" type="radio" value="ascending" {{ ascendingChecked }}>
+      <label for="input-ascending">Ascending</label>
+    </div>
+
+    <div class="form-radio">
+      <input id="input-descending" name="sort" type="radio" value="descending" {{ descendingChecked }}>
+      <label for="input-descending">Descending</label>
+    </div>
+  </form>
+
+  <table class="table" style="margin-top: 30px;">
+    <thead>
+      <tr>
+        {{ thead }}
+      </tr>
+    </thead>
+    <tbody>
+      {{ tbody }}
+    </tbody>
+  </table>
+</div>
