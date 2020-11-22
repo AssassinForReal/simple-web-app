@@ -112,7 +112,7 @@ router.route('/login')
     storage.lastError = err
 
     if (err) {
-      return res.redirect('/register')
+      return res.redirect('/login')
     }
     
     res.redirect('/admin')
